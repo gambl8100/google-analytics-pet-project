@@ -15,7 +15,7 @@ const sendEvent = async (clientId, eventName) => {
     events: [
       {
         name: eventName,
-        params: {},
+        // params: {},
       },
     ],
   };
@@ -26,11 +26,9 @@ const sendEvent = async (clientId, eventName) => {
       payload
     )
     .then((response) => {
-      console.log('SUCCESS');
       console.log(response);
     })
     .catch((error) => {
-      console.log('ERROR');
       console.log(error);
     });
 };
