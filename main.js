@@ -9,7 +9,7 @@ const config = {
 
 const theAxios = axios.create(config);
 
-const sendEvent = async (clientId, eventName) => {
+const sendGAEvent = async (clientId, eventName) => {
   const payload = {
     client_id: clientId,
     events: [
@@ -36,4 +36,4 @@ const sendEvent = async (clientId, eventName) => {
 const CLIENT_ID = '';
 const EVENT_NAME = '';
 
-sendEvent(CLIENT_ID, EVENT_NAME);
+sendGAEvent(CLIENT_ID, EVENT_NAME);
