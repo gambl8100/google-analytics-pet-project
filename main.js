@@ -15,7 +15,10 @@ const sendGAEvent = async (clientId, eventName) => {
     events: [
       {
         name: eventName,
-        // params: {},
+        params: {
+          foo: 'foo',
+          bar: 'bar'
+        },
       },
     ],
   };
